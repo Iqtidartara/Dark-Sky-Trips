@@ -18,8 +18,8 @@ const MainPage = () => {
           <Image
   src="/LOGO.png"
   alt="Logo"
-  width={12}
-  height={12}
+  width={600}
+  height={600}
 />
 
             <Link
