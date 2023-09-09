@@ -1,0 +1,39 @@
+Carousel.module.css
+.slider {
+    height: 250px;
+    
+  
+    width: 100%;
+    display: grid;
+    place-items: center;
+  
+   
+  
+  }
+  
+  .track {
+    display: flex;
+    width: calc(250px * 18);
+    animation: scroll 30s linear infinite;
+  overflow: hidden;
+  }
+  
+  .slide {
+    height: 200px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    perspective: 100px;
+   
+  }
+  
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-250px * 9));
+    }
+  }
+  
