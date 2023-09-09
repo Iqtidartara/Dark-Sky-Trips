@@ -1,6 +1,6 @@
-import Link from "next/link";
-import React from "react";
 
+import React from "react";
+import Image from "next/image";
 const Comments = () => {
   const clientData = [
     {
@@ -8,7 +8,7 @@ const Comments = () => {
       role: "Selector, PCB",
       testimonial:
         "Embarking on the adventure of a lifetime with this tourism company was a decision I'll cherish forever. Their meticulous planning, warm hospitality, and extraordinary destinations made every moment unforgettable.",
-      image: "Ellipse 12 - Copy.png",
+      image: "Sathee.png",
     
     },
     {
@@ -16,14 +16,14 @@ const Comments = () => {
       role: "Actor, PK",
       testimonial:
         "Every destination they guided me to felt like a heartfelt embrace. The sights, the sounds, and the people I met – all came together in a symphony of emotions I'll forever carry.",
-      image: "Ellipse 12(1).png",
+      image:"NAam.png",
     },
     {
       name: "Mehwish Hayat",
       role: "Actor PK",
       testimonial:
         "Traveling with this tourism company was more than a journey; it was a soulful connection. The places came alive with stories, and the people felt like old friends. An experience that touched my heart.",
-      image: "Ellipse 12(2).png",
+      image: "mewish.png",
     },
   ];
 
@@ -49,11 +49,13 @@ const Comments = () => {
           >
             <div className="bg-gray flex gap-3 items-start">
               <div>
-                <img
-                  src={client.image}
-                  alt={client.name}
-                  className="w-12 h-12 rounded-full"
-                />
+              <Image
+  src={`/${client.image}`} // Use string interpolation here
+  alt={client.name}
+  width={500}
+  height={500}
+  className="w-12 h-12 rounded-full"
+/>
               </div>
               <div>
                 <h1 className="text-[15px]">{client.name}</h1>

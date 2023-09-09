@@ -1,5 +1,5 @@
 'use client'
-
+import Image from "next/image";
 import React, { useState, useEffect } from "react";
 import styles from "./styles.module.css"; // Import the CSS module
 
@@ -52,11 +52,13 @@ const Carousel = () => {
                 index === currentIndex ? styles.active : ""
               }`}
             >
-              <img
-                className="rounded-lg"
-                src={image}
-                alt={`Image ${index}`}
-              />
+              <Image
+      className="rounded-lg"
+      src={image}
+      alt={`Image ${index}`}
+      width={600}
+      height={600}
+         />
             </div>
           ))}
         </div>

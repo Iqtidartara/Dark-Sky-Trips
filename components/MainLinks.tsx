@@ -29,7 +29,7 @@ const MainLinks = () => {
             </span>
           </h2>
           <p className="max-w-3xl mx-auto text-sm sm:text-base">
-          Whether you're an intrepid explorer, a budget-conscious backpacker, or seeking a luxurious escape, our comprehensive selection of packages guarantees an unforgettable adventure. Discover the beauty of diverse landscapes, cultures, and experiences, all while staying within your budget
+          Whether you`&apos;`re an intrepid explorer, a budget-conscious backpacker, or seeking a luxurious escape, our comprehensive selection of packages guarantees an unforgettable adventure. Discover the beauty of diverse landscapes, cultures, and experiences, all while staying within your budget
           </p>
           {/* <div className="flex flex-col sm:flex-row items-center justify-center gap-3 sm:gap-6">
             <Link

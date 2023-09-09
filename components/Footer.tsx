@@ -1,5 +1,7 @@
 import React from "react";
 import { FaFacebook, FaTwitter, FaLinkedin, FaEnvelope } from "react-icons/fa";
+import Image from "next/image";
+
 
 const Footer: React.FC = () => {
   return (
@@ -7,11 +9,13 @@ const Footer: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col sm:flex-row justify-between items-center">
           <div className="flex items-center mb-4 sm:mb-0">
-            <img
-              src="/LOGO.png"
-              alt="Dark Sky Trips"
-              className="w-8 h-8 mr-2"
-            />
+          <Image
+      src="/LOGO.png"
+      alt="Dark Sky Trips"
+      width={600}
+      height={600}
+      className="w-8 h-8 mr-2"
+    />
             <p className="text-sm font-semibold  hover:text-orange-500 cursor-pointer">DarkSky Trips</p>
           </div>
           <div className="flex space-x-4">

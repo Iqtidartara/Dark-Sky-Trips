@@ -1,6 +1,7 @@
 import { CONTACT_US_LINK } from "@/constants";
 import Link from "next/link";
 import React from "react";
+import Image from "next/image";
 
 const MainPage = () => {
   return (
@@ -14,7 +15,13 @@ const MainPage = () => {
       <div className="bg-black/40 w-full h-full flex justify-center">
         <div className="w-full max-w-6xl mt-4 ">
           <div className="flex items-center justify-between p-4">
-            <img src="/LOGO.png" alt="Logo" className="w-12 " />
+          <Image
+  src="/LOGO.png"
+  alt="Logo"
+  width={12}
+  height={12}
+/>
+
             <Link
               href={CONTACT_US_LINK}
               className="inline-block px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm text-white font-medium bg-[#FF5209] duration-150 hover:bg-[#101010] active:bg-[#101010] rounded-lg border-2 border-orange-500 shadow-lg hover:shadow-none"

@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { CONTACT_US_LINK } from "@/constants";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -8,7 +9,14 @@ const About = () => {
       <div className=" max-w-6xl mx-auto text-gray-400 ">
         <div className="w-full flex flex-col md:flex-row items-center justify-between py-12 px-5 md:px-10 gap-5 md:gap-10">
           <div className="w-full md:w-1/2 flex items-center justify-center ">
-            <img src="/about.jpg" alt="about"  className="rounded-xl"/>
+          <Image
+  src="/about.jpg"
+  alt="about"
+  width={500}
+  height={500}
+  className="rounded-xl"
+/>
+
           </div>
           <div className="w-full md:w-1/2 md:mr-10">
             <h1 className="text-white font-inter font-semibold text-2xl md:text-3xl text-center md:text-left">
