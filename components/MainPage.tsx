@@ -18,13 +18,13 @@ const MainPage = () => {
           <Image
   src="/LOGO.png"
   alt="Logo"
-  width={45}
-  height={45}
+  width={70}
+  height={70}
 />
 
             <Link
               href={CONTACT_US_LINK}
-              className="inline-block px-3 py-1 md:px-4 md:py-2 text-xs md:text-sm text-white font-medium bg-[#FF5209] duration-150 hover:bg-[#101010] active:bg-[#101010] rounded-lg border-2 border-orange-500 shadow-lg hover:shadow-none"
+              className="inline-block px-3 py-1 md:px-5 md:py-3 text-xs md:text-sm text-white font-medium bg-[#FF5209] duration-150 hover:bg-[#101010] active:bg-[#101010] rounded-lg border-2 border-orange-500 shadow-lg hover:shadow-none"
             >
               Contact us
             </Link>
@@ -55,13 +55,13 @@ const MainPage = () => {
               <div className="flex flex-col md:flex-row gap-3 items-center mt-4 justify-center">
                 <Link
                   href={CONTACT_US_LINK}
-                  className="block py-2 px-4 text-white font-medium bg-[#FF5209] duration-150 hover:bg-[#101010] active:bg-[#101010] rounded-lg border-2 border-orange-500 shadow-lg hover:shadow-none"
+                  className="block py-3 px-6 text-white font-medium bg-[#FF5209] duration-150 hover:bg-[#101010] active:bg-[#101010] rounded-lg border-2 border-orange-500 shadow-lg hover:shadow-none"
                 >
                   Contact us
                 </Link>
                 <Link
                   href="#packages-section"
-                  className="block py-2 px-4 text-white hover:text-gray-400 font-medium duration-150 active:bg-gray-100  rounded-lg border-2 border-orange-500"
+                  className="block py-3 px-4 text-white hover:text-gray-400 font-medium duration-150 active:bg-gray-100  rounded-lg border-2 border-orange-500"
                 >
                   See Packages
                 </Link>

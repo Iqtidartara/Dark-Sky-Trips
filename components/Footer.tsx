@@ -14,7 +14,7 @@ const Footer: React.FC = () => {
       alt="Dark Sky Trips"
       width={600}
       height={600}
-      className="w-8 h-8 mr-2"
+      className="w-[40px] h-[40px] mr-2"
     />
             <p className="text-sm font-semibold  hover:text-orange-500 cursor-pointer">DarkSky Trips</p>
           </div>
